@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_page"
+            android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:title="首页" />
+        <!--<item-->
+            <!--android:id="@+id/nav_own_page"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="我的" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_collection"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="收藏" />-->
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:title="设置" />
+        </menu>
+    </item>
+
+</menu>

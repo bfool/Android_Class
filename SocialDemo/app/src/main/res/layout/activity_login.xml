@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="@dimen/icon_dimen"
+            android:layout_height="@dimen/icon_dimen"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText_login_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="@string/register_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_login"
+        android:layout_below="@+id/relativeLayout1"
+        android:ems="10"
+        android:hint="@string/register_pwd"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/button_login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_login"
+        android:layout_alignBottom="@+id/button_login"
+        android:layout_alignRight="@+id/editText_login_user_name"
+        android:background="@drawable/button_selector"
+        android:text="@string/register"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_login_user_name"
+        android:layout_below="@+id/editText_login_password"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/login"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

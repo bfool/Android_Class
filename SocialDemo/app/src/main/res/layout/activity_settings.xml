@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card_background"
+        android:descendantFocusability="beforeDescendants"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+
+            <ImageView
+                android:id="@+id/imageView_update_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textView_update_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center|center_vertical"
+                android:text="@string/update_head"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button_update_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
